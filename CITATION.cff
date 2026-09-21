@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Metastasis as Stochastic Spreading on Organ-to-Organ Anatomical Graphs: Adequacy of Local Tumour-Burden ODEs under Lumped Outputs"
+message: "If you cite this manuscript, please use the metadata below. This record is a working computational-research thesis, not a journal article. No DOI is registered for this document. Do not invent a DOI."
+type: article
+authors:
+  - family-names: Ogbonna
+    given-names: Kelechi Emeka
+    email: kelechiogbonna300@gmail.com
+repository-code: "https://github.com/cloudynirvana/thesis-05-metastasis-anatomical-graphs"
+url: "https://github.com/cloudynirvana/thesis-05-metastasis-anatomical-graphs"
+license: MIT
+date-released: "2026-09-21"
+abstract: "This thesis asks whether a local tumour-burden ordinary differential equation remains an adequate in-silico object once dissemination is posed as a stochastic process on an organ-to-organ anatomical graph, or whether graph observables remain unidentified under current lumped outputs. Methods contrast lumped burden ODEs with Markov and occupancy models on directed anatomical networks. Seeded sites, transition rates, spreader–sponge roles, transit times, organ-specific colonization, and secondary-seeding fluxes are shown to stay unidentified from scalar or summed burden. Research only. Not a medical device. Not a metastasis-treatment claim."
+keywords:
+  - computational oncology
+  - metastasis
+  - anatomical graphs
+  - Markov chains
+  - identifiability
+  - lumped outputs
+  - tumour-burden ODE
+  - research-only
