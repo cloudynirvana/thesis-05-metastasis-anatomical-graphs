@@ -1,0 +1,473 @@
+{
+  "disclaimer": "Computational research only. Toy five-node anatomy. Not a medical device, not a patient cohort, not a metastasis-treatment claim. No document DOI.",
+  "nodes": [
+    "P",
+    "L",
+    "V",
+    "B",
+    "R"
+  ],
+  "t_end": 40.0,
+  "n_obs": 81,
+  "seed": 5,
+  "experiment_1_linear_homogeneous": {
+    "r": 0.08,
+    "lump_rmse_filter_vs_skip": 1.2887787959623216e-08,
+    "lump_maxabs_filter_vs_skip": 4.223514338264067e-08,
+    "lump_rmse_filter_vs_closed_form": 3.9373063166413765e-08,
+    "site_rmse_filter_vs_skip": 1.6770509531921767,
+    "site_maxabs_filter_vs_skip": 7.188671441092197,
+    "final_occupancy_filter": {
+      "P": 2.1105805528865247,
+      "L": 3.308375332016608,
+      "V": 8.33235379828176,
+      "B": 8.21977097560237,
+      "R": 2.561449632808751
+    },
+    "final_occupancy_skip": {
+      "P": 0.6872310423973417,
+      "L": 10.497046773108805,
+      "V": 3.1986222621322122,
+      "B": 3.192792065380419,
+      "R": 6.956838142989658
+    },
+    "first_site_filter": [
+      "L",
+      0.5
+    ],
+    "first_site_skip": [
+      "V",
+      1.0
+    ]
+  },
+  "experiment_2_logistic_twins": {
+    "cost": 2.085371394597475e-06,
+    "lump_rmse": 0.00022691551669829936,
+    "lump_maxabs": 0.0005301347787645128,
+    "rel_lump_rmse": 6.291114753891948e-06,
+    "site_rmse": 10.65630903635652,
+    "site_maxabs": 30.54286571017021,
+    "first_site_filter": {
+      "site": "L",
+      "t": 1.5
+    },
+    "first_site_skip": {
+      "site": "V",
+      "t": 0.5
+    },
+    "final_filter": {
+      "P": 50.952142565187586,
+      "L": 27.780266826605242,
+      "V": 17.11264261887789,
+      "B": 16.530458574649657,
+      "R": 2.9842300846897296
+    },
+    "final_skip": {
+      "P": 34.457051445056145,
+      "L": 5.071556619617674,
+      "V": 47.579834487498545,
+      "B": 12.232235061975004,
+      "R": 16.018789555938238
+    },
+    "r_filter": [
+      0.18,
+      0.12,
+      0.1,
+      0.11,
+      0.07
+    ],
+    "r_skip": [
+      0.17960792000071032,
+      0.14099727334311682,
+      0.15416892768166604,
+      0.15443497088732547,
+      0.05007539805519068
+    ],
+    "K_filter": [
+      80.0,
+      25.0,
+      40.0,
+      35.0,
+      8.0
+    ],
+    "K_skip": [
+      80.00052845827477,
+      18.000775452636557,
+      50.00009659277395,
+      30.00075629693428,
+      10.001136222860074
+    ],
+    "y_final_filter": 115.3597406700101,
+    "y_final_skip": 115.35946717008561,
+    "primary_rmse": 9.245748433274278
+  },
+  "experiment_3_fisher": {
+    "edge_names": [
+      "P->V",
+      "P->B",
+      "P->L",
+      "V->R",
+      "B->L",
+      "V->P"
+    ],
+    "theta_edges": [
+      0.10136005333935329,
+      0.003902149720235694,
+      0.0,
+      0.02391317111045133,
+      0.013801316494763112,
+      0.030970811387448064
+    ],
+    "fim_lump": {
+      "eigs": [
+        83476733.48780237,
+        981855.3440478035,
+        19152.590433100722,
+        503.95359419350115,
+        29.272725777825162,
+        0.04301023753056759
+      ],
+      "rank": 5,
+      "n_params": 6,
+      "n_obs": 81,
+      "log10_condition_pos": 9.287993605413115,
+      "min_pos_eig": 0.04301023753056759,
+      "max_eig": 83476733.48780237,
+      "sensitivity_col_norms": [
+        1717.7905479773979,
+        6096.5849469831965,
+        6273.289665288351,
+        932.7862731948517,
+        78.8519762771458,
+        2031.908270290208
+      ]
+    },
+    "fim_primary": {
+      "eigs": [
+        15575864.711507292,
+        14662.45611549558,
+        1541.3961670934248,
+        50.21198030376884,
+        1.2289238654947488e-06,
+        3.3740942374393143e-11
+      ],
+      "rank": 4,
+      "n_params": 6,
+      "n_obs": 81,
+      "log10_condition_pos": 17.664294958206163,
+      "min_pos_eig": 3.3740942374393143e-11,
+      "max_eig": 15575864.711507292,
+      "sensitivity_col_norms": [
+        1492.9475082691392,
+        2090.9666214767517,
+        2090.9665724135634,
+        598.5116542031202,
+        8.924180406584106e-06,
+        2064.1530209813905
+      ]
+    },
+    "fim_full": {
+      "eigs": [
+        124262006.05545832,
+        46766604.83381672,
+        7253474.241776691,
+        4737443.610757818,
+        19418.59736444683,
+        16213.010551632939
+      ],
+      "rank": 6,
+      "n_params": 6,
+      "n_obs": 405,
+      "log10_condition_pos": 3.884474695131675,
+      "min_pos_eig": 16213.010551632939,
+      "max_eig": 124262006.05545832,
+      "sensitivity_col_norms": [
+        1518.4062784465393,
+        7909.3341807492025,
+        10351.707919879618,
+        2386.123968446618,
+        962.5662194011601,
+        2100.965816596258
+      ]
+    },
+    "fim_count": {
+      "eigs": [
+        9999999999.999996,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rank": 1,
+      "n_params": 6,
+      "n_obs": 81,
+      "log10_condition_pos": 0.0,
+      "min_pos_eig": 9999999999.999996,
+      "max_eig": 9999999999.999996,
+      "sensitivity_col_norms": [
+        0.0,
+        0.0,
+        99999.99999999999,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "experiment_4_route_profile": {
+    "c_shed": 0.05,
+    "profile": [
+      {
+        "alpha_lung_share": 0.0,
+        "lump_sse": 3555.322109585915,
+        "site_sse": 36784.37268321836,
+        "first_site": "V",
+        "liver_final": 46.456074771551485,
+        "lung_final": 0.0
+      },
+      {
+        "alpha_lung_share": 0.05,
+        "lump_sse": 1845.3691865523556,
+        "site_sse": 31780.889649669734,
+        "first_site": "V",
+        "liver_final": 45.93807839325047,
+        "lung_final": 4.623664279254452
+      },
+      {
+        "alpha_lung_share": 0.1,
+        "lump_sse": 878.5445328850323,
+        "site_sse": 27712.48043282904,
+        "first_site": "V",
+        "liver_final": 45.33150582662135,
+        "lung_final": 8.103795202232645
+      },
+      {
+        "alpha_lung_share": 0.15000000000000002,
+        "lump_sse": 354.3442617804079,
+        "site_sse": 24282.251155149992,
+        "first_site": "V",
+        "liver_final": 44.650747799520055,
+        "lung_final": 10.850827789836199
+      },
+      {
+        "alpha_lung_share": 0.2,
+        "lump_sse": 100.80628464620894,
+        "site_sse": 21313.762028680558,
+        "first_site": "V",
+        "liver_final": 43.903564499185244,
+        "lung_final": 13.099085583734452
+      },
+      {
+        "alpha_lung_share": 0.25,
+        "lump_sse": 12.984752843018214,
+        "site_sse": 18694.974042332913,
+        "first_site": "V",
+        "liver_final": 43.09370330758791,
+        "lung_final": 14.992114852268752
+      },
+      {
+        "alpha_lung_share": 0.30000000000000004,
+        "lump_sse": 23.721719648793435,
+        "site_sse": 16351.250696801082,
+        "first_site": "V",
+        "liver_final": 42.22221895627595,
+        "lung_final": 16.622782975575955
+      },
+      {
+        "alpha_lung_share": 0.35000000000000003,
+        "lump_sse": 88.51790402286451,
+        "site_sse": 14231.16091956768,
+        "first_site": "V",
+        "liver_final": 41.28816267100427,
+        "lung_final": 18.053846237809093
+      },
+      {
+        "alpha_lung_share": 0.4,
+        "lump_sse": 177.17100824277315,
+        "site_sse": 12298.499266735607,
+        "first_site": "V",
+        "liver_final": 40.28893150070229,
+        "lung_final": 19.329251957019615
+      },
+      {
+        "alpha_lung_share": 0.45,
+        "lump_sse": 268.9171084581475,
+        "site_sse": 10527.570869486492,
+        "first_site": "V",
+        "liver_final": 39.22041391233816,
+        "lung_final": 20.480704723642063
+      },
+      {
+        "alpha_lung_share": 0.5,
+        "lump_sse": 349.5035118642818,
+        "site_sse": 8900.30792659682,
+        "first_site": "V",
+        "liver_final": 38.076996841460094,
+        "lung_final": 21.53166086279721
+      },
+      {
+        "alpha_lung_share": 0.55,
+        "lump_sse": 409.3887619017389,
+        "site_sse": 7404.47806349989,
+        "first_site": "L",
+        "liver_final": 36.85146306751721,
+        "lung_final": 22.49985431449545
+      },
+      {
+        "alpha_lung_share": 0.6000000000000001,
+        "lump_sse": 442.6391569552678,
+        "site_sse": 6032.585771728081,
+        "first_site": "L",
+        "liver_final": 35.53478657273399,
+        "lung_final": 23.39894747201837
+      },
+      {
+        "alpha_lung_share": 0.65,
+        "lump_sse": 446.2854295263741,
+        "site_sse": 4781.247773138652,
+        "first_site": "L",
+        "liver_final": 34.11581825018172,
+        "lung_final": 24.23964140488125
+      },
+      {
+        "alpha_lung_share": 0.7000000000000001,
+        "lump_sse": 420.01166190394304,
+        "site_sse": 3650.925139714479,
+        "first_site": "L",
+        "liver_final": 32.580840613980676,
+        "lung_final": 25.03044132089067
+      },
+      {
+        "alpha_lung_share": 0.75,
+        "lump_sse": 366.11499922128223,
+        "site_sse": 2645.959740995561,
+        "first_site": "L",
+        "liver_final": 30.912954281039447,
+        "lung_final": 25.77819603854236
+      },
+      {
+        "alpha_lung_share": 0.8,
+        "lump_sse": 289.72191900285327,
+        "site_sse": 1774.9104105278795,
+        "first_site": "L",
+        "liver_final": 29.09123794591837,
+        "lung_final": 26.488485698359867
+      },
+      {
+        "alpha_lung_share": 0.8500000000000001,
+        "lump_sse": 199.28847089971723,
+        "site_sse": 1051.2287042544936,
+        "first_site": "L",
+        "liver_final": 27.08959293005731,
+        "lung_final": 27.165905233143874
+      },
+      {
+        "alpha_lung_share": 0.9,
+        "lump_sse": 107.45883198284014,
+        "site_sse": 494.3661762303078,
+        "first_site": "L",
+        "liver_final": 24.875136176099,
+        "lung_final": 27.81427499707721
+      },
+      {
+        "alpha_lung_share": 0.9500000000000001,
+        "lump_sse": 32.4210890477961,
+        "site_sse": 131.4777955085383,
+        "first_site": "L",
+        "liver_final": 22.405930447051407,
+        "lung_final": 28.436799418055358
+      },
+      {
+        "alpha_lung_share": 1.0,
+        "lump_sse": 0.0,
+        "site_sse": 0.0,
+        "first_site": "L",
+        "liver_final": 19.62771644506699,
+        "lung_final": 29.036188154975164
+      }
+    ],
+    "lump_sse_range": [
+      0.0,
+      3555.322109585915
+    ],
+    "site_sse_range": [
+      0.0,
+      36784.37268321836
+    ]
+  },
+  "experiment_5_occupancy_ctmc": {
+    "n_paths": 4000,
+    "mean_wait_filter": 9.670862501910381,
+    "mean_wait_skip": 9.861961825150809,
+    "median_wait_filter": 6.55482529786311,
+    "median_wait_skip": 6.968480974943251,
+    "ks_waiting_times": 0.027749999999999997,
+    "site_hist_filter": {
+      "L": 3175,
+      "V": 210,
+      "B": 395,
+      "R": 220
+    },
+    "site_hist_skip": {
+      "L": 827,
+      "V": 2343,
+      "B": 624,
+      "R": 206
+    },
+    "first_site_mode_filter": "L",
+    "first_site_mode_skip": "V",
+    "rate_filter": {
+      "L": 0.08,
+      "V": 0.005,
+      "B": 0.01,
+      "R": 0.005
+    },
+    "rate_skip": {
+      "L": 0.02,
+      "V": 0.060000000000000005,
+      "B": 0.015000000000000001,
+      "R": 0.005
+    }
+  },
+  "experiment_6_spreader_sponge": {
+    "roles": [
+      {
+        "site": "L",
+        "Pin": 0.55,
+        "Pout": 1.0000000000000002,
+        "Pout_over_Pin": 1.8181818181818183,
+        "role": "spreader"
+      },
+      {
+        "site": "V",
+        "Pin": 1.35,
+        "Pout": 1.0,
+        "Pout_over_Pin": 0.7407407407407407,
+        "role": "sponge"
+      },
+      {
+        "site": "B",
+        "Pin": 1.05,
+        "Pout": 1.0,
+        "Pout_over_Pin": 0.9523809523809523,
+        "role": "sponge"
+      },
+      {
+        "site": "R",
+        "Pin": 1.05,
+        "Pout": 1.0,
+        "Pout_over_Pin": 0.9523809523809523,
+        "role": "sponge"
+      }
+    ],
+    "note": "Roles are functions of a transition matrix. A scalar T(t) has no Pin or Pout."
+  },
+  "experiment_7_class_a_fit": {
+    "logistic_r": 0.15748963361841523,
+    "logistic_K": 141.49297526777826,
+    "lump_rmse_logistic_vs_filter_graph": 1.0254700783470743,
+    "lump_rmse_skip_twin_vs_filter_graph": 0.00022691551669829936,
+    "comment": "A two-parameter logistic can describe the lumped graph output to a comparable (or better) RMSE than a second graph twin, while remaining silent on first-site identity."
+  }
+}

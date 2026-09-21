@@ -1,6 +1,6 @@
 # Thesis #5 — Vancouver references
 
-Numbered Vancouver list matching `THESIS.md`. Journal DOIs were checked against Crossref or publisher records on 21 September 2026. No DOI is invented. This document has no registered DOI.
+Journal items use Vancouver form. DOI fields appear only for Crossref- or PubMed-verified journal records. WHO and GitHub items are complete Internet citations without a `doi:` field. No DOI is invented. This document has no registered DOI.
 
 1. Sung H, Filho AM, Laversanne M, Ferlay J, Siegel RL, Soerjomataram I, et al. Global cancer statistics 2024: GLOBOCAN estimates of incidence and mortality worldwide for 34 cancers in 186 countries. CA Cancer J Clin. 2026;76(4):e70090. doi:10.3322/caac.70090.
 2. World Health Organization. Cancer [Internet]. Geneva: World Health Organization; 2026 [cited 2026 Sep 21]. Available from: https://www.who.int/news-room/fact-sheets/detail/cancer
@@ -29,7 +29,7 @@ Numbered Vancouver list matching `THESIS.md`. Journal DOIs were checked against 
 25. DiSibio G, French SW. Metastatic patterns of cancers: results from a large autopsy study. Arch Pathol Lab Med. 2008;132(6):931-939. doi:10.5858/2008-132-931-MPOCRF.
 26. Newton PK, Mason J, Bethel K, Bazhenova LA, Nieva J, Kuhn P. A stochastic Markov chain model to describe lung cancer growth and metastasis. PLoS One. 2012;7(4):e34637. doi:10.1371/journal.pone.0034637.
 27. Newton PK, Mason J, Bethel K, Bazhenova L, Nieva J, Norton L, et al. Spreaders and sponges define metastasis in lung cancer: a Markov chain Monte Carlo mathematical model. Cancer Res. 2013;73(9):2760-2769. doi:10.1158/0008-5472.CAN-12-4488.
-28. Newton PK, Mason J, Venkatappa N, Jochelson MS, Hurt B, Nieva J, et al. Spatiotemporal progression of metastatic breast cancer: a Markov chain model highlighting the role of early metastatic sites. npj Breast Cancer. 2015;1:15018. doi:10.1038/npjbcancer.2015.18.
+28. Newton PK, Mason J, Venkatappa N, Jochelson MS, Hurt B, Nieva J, Comen E, Norton L, Kuhn P. Spatiotemporal progression of metastatic breast cancer: a Markov chain model highlighting the role of early metastatic sites. npj Breast Cancer. 2015;1:15018. doi:10.1038/npjbcancer.2015.18.
 29. Scott J, Kuhn P, Anderson ARA. Unifying metastasis — integrating intravasation, circulation and end-organ colonization. Nat Rev Cancer. 2012;12(7):445-446. doi:10.1038/nrc3287.
 30. Scott JG, Basanta D, Anderson ARA, Gerlee P. A mathematical model of tumour self-seeding reveals secondary metastatic deposits as drivers of primary tumour growth. J R Soc Interface. 2013;10(82):20130011. doi:10.1098/rsif.2013.0011.
 31. Scott JG, Fletcher AG, Maini PK, Anderson AR, Gerlee P. A filter-flow perspective of haematogenous metastasis offers a non-genetic paradigm for personalised cancer therapy. Eur J Cancer. 2014;50(17):3068-3075. doi:10.1016/j.ejca.2014.08.019.
@@ -47,9 +47,12 @@ Numbered Vancouver list matching `THESIS.md`. Journal DOIs were checked against 
 43. Naxerova K, Jain RK. Using tumour phylogenetics to identify the roots of metastasis in humans. Nat Rev Clin Oncol. 2015;12(5):258-272. doi:10.1038/nrclinonc.2014.238.
 44. Gundem G, Van Loo P, Kremeyer B, Alexandrov LB, Tubio JMC, Papaemmanuil E, et al. The evolutionary history of lethal metastatic prostate cancer. Nature. 2015;520(7547):353-357. doi:10.1038/nature14347.
 45. Gatenby RA, Silva AS, Gillies RJ, Frieden BR. Adaptive therapy. Cancer Res. 2009;69(11):4894-4903. doi:10.1158/0008-5472.CAN-08-3658.
-46. Ogbonna KE. Project Confluence [Internet]. GitHub; 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/project-confluence
-47. Ogbonna KE. CONFLUENCE × OnCo: an evidence-gated dynamical framework for integrating oncology knowledge graphs with adaptive cancer-state models [Internet]. Thesis #1 working manuscript. 20 September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-01-confluence-onco
-48. Ogbonna KE. Complexity science and NSTG-guided in-silico pathology dynamics for biologics pathway exploration [Internet]. Thesis #2 working manuscript. 20 September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-02-complexity-nstg
-49. Ogbonna KE. Disease profiles for complex pathologies: a gated method for systemic personalized-medicine research objects [Internet]. Thesis #3 working manuscript. 20 September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-03-disease-profile
-50. Ogbonna KE. DISCLAIMER.md [Internet]. Thesis #5 / GitHub; 2026 Sep 21 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-05-metastasis-anatomical-graphs/blob/main/DISCLAIMER.md
-51. Ogbonna KE. NEXT_PAPERS.md [Internet]. Research Theses Hub / GitHub; 2026 Sep 21 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/research-theses-hub/blob/main/NEXT_PAPERS.md
+46. Ogbonna KE. identifiability_results.json [Internet]. Thesis #5 / GitHub; 2026 Sep 21 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-05-metastasis-anatomical-graphs/blob/main/results/identifiability_results.json
+47. Ogbonna KE. identifiability_experiment.py [Internet]. Thesis #5 / GitHub; 2026 Sep 21 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-05-metastasis-anatomical-graphs/blob/main/scripts/identifiability_experiment.py
+48. Ogbonna KE. Project Confluence [Internet]. GitHub; 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/project-confluence
+49. Ogbonna KE. CONFLUENCE × OnCo: an evidence-gated dynamical framework for integrating oncology knowledge graphs with adaptive cancer-state models [Internet]. Thesis #1 computational research thesis. September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-01-confluence-onco
+50. Ogbonna KE. Complexity science and NSTG-guided in-silico pathology dynamics for biologics pathway exploration [Internet]. Thesis #2 working manuscript. 20 September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-02-complexity-nstg
+51. Ogbonna KE. Disease profiles for complex pathologies: a gated method for systemic personalized-medicine research objects [Internet]. Thesis #3 working manuscript. 20 September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-03-disease-profile
+52. Ogbonna KE. Occult residual disease as a hybrid switching system: named modes, switching observables, and a refusal to smuggle continuous Θ [Internet]. Thesis #4 working manuscript. 21 September 2026 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-04-occult-hybrid-switching
+53. Ogbonna KE. NEXT_PAPERS.md [Internet]. Research Theses Hub / GitHub; 2026 Sep 21 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/research-theses-hub/blob/main/NEXT_PAPERS.md
+54. Ogbonna KE. DISCLAIMER.md [Internet]. Thesis #5 / GitHub; 2026 Sep 21 [cited 2026 Sep 21]. Available from: https://github.com/cloudynirvana/thesis-05-metastasis-anatomical-graphs/blob/main/DISCLAIMER.md

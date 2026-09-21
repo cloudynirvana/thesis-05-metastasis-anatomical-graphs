@@ -247,10 +247,12 @@ __BODY__
 
 def main() -> None:
     thesis = MD_PATH.read_text(encoding="utf-8")
-    refs = REFS_PATH.read_text(encoding="utf-8")
-    # Drop the refs file's own H1; the thesis already points to it.
-    refs_body = re.sub(r"^# .*\n+", "", refs, count=1)
-    body = md_to_html_body(thesis) + "\n" + md_to_html_body("## References\n\n" + refs_body)
+    if re.search(r"^## REFERENCES\b", thesis, flags=re.M):
+        body = md_to_html_body(thesis)
+    else:
+        refs = REFS_PATH.read_text(encoding="utf-8")
+        refs_body = re.sub(r"^# .*\n+", "", refs, count=1)
+        body = md_to_html_body(thesis) + "\n" + md_to_html_body("## REFERENCES\n\n" + refs_body)
     html_doc = HTML_TMPL.replace("__CSS__", CSS).replace("__BODY__", body)
     HTML_PATH.write_text(html_doc, encoding="utf-8")
 
@@ -259,7 +261,7 @@ def main() -> None:
         "timeout",
         "-k",
         "2",
-        "20",
+        "60",
         chrome,
         "--headless",
         "--disable-gpu",
